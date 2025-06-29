@@ -5,7 +5,7 @@ from models import VacuumProduct
 def load_data():
     products = []
     try:
-        with open("/Users/vedantbrahmbhatt/Desktop/Home_Depot_Analysis/vacuum_dummy_data.csv", mode="r", encoding="utf-8") as file:
+        with open("", mode="r", encoding="utf-8") as file:
             reader = csv.DictReader(file)
             for row in reader:
                 product = VacuumProduct.from_dict(row)
